@@ -468,10 +468,10 @@ namespace Impl
 {
 inline bool isValidVehicleModel(int model)
 {
-	if (model < 400 || model > 611)
+	if (model >= MIN_VEHICLE_ID && model <= MAX_VEHICLE_ID)
 	{
-		return false;
+		return true;
 	}
-	return true;
+	return false;
 }
 }

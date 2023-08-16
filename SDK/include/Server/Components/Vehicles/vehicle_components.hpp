@@ -249,7 +249,7 @@ inline bool isValidComponentForVehicleModel(int vehicleModel, int componentId)
 		return false;
 	}
 
-	vehicleModel -= 400;
+	vehicleModel -= MIN_VEHICLE_ID;
 	if (vehicleModel < 0 || vehicleModel >= MAX_VEHICLE_MODELS)
 	{
 		return false;
